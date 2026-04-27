@@ -1,8 +1,9 @@
 /* =============================================================
    HIMAT DHALIWAL — BRAND IDENTITY SHOWCASE
-   Design Philosophy: Refined Modernism
+   Design Philosophy: Bold Editorial (Astrix Builders Portfolio Style)
+   Primary Font: JetBrains Mono (matches DIN Alternate Bold aesthetic)
+   Secondary Font: Outfit (body text)
    Color System: Ink Black / Warm White / Slate Navy / Champagne Gold
-   Typography: Cormorant Garamond (display) + Outfit (body) + JetBrains Mono (labels)
    ============================================================= */
 
 @import "tailwindcss";
@@ -50,47 +51,47 @@
 
   /* Brand Colors */
   --color-brand-black: #0D0D0D;
-  --color-brand-white: #FAFAF8;
+  --color-brand-white: #F5F5F3;
   --color-brand-navy: #1C2B3A;
   --color-brand-gold: #B8963E;
-  --color-brand-gold-light: #D4AF6A;
+  --color-brand-lightblue: #C8DCE8;
   --color-brand-stone: #6B7280;
 }
 
 :root {
-  --radius: 0.25rem;
-  --background: oklch(0.99 0.002 90);
-  --foreground: oklch(0.1 0.005 30);
-  --card: oklch(0.99 0.002 90);
-  --card-foreground: oklch(0.1 0.005 30);
-  --popover: oklch(0.99 0.002 90);
-  --popover-foreground: oklch(0.1 0.005 30);
-  --primary: oklch(0.2 0.01 240);
-  --primary-foreground: oklch(0.98 0.002 90);
-  --secondary: oklch(0.96 0.003 90);
-  --secondary-foreground: oklch(0.2 0.01 240);
-  --muted: oklch(0.96 0.003 90);
-  --muted-foreground: oklch(0.5 0.01 240);
-  --accent: oklch(0.65 0.08 60);
-  --accent-foreground: oklch(0.99 0.002 90);
+  --radius: 0rem;
+  --background: oklch(0.97 0.002 90);
+  --foreground: oklch(0.08 0.005 30);
+  --card: oklch(0.97 0.002 90);
+  --card-foreground: oklch(0.08 0.005 30);
+  --popover: oklch(0.97 0.002 90);
+  --popover-foreground: oklch(0.08 0.005 30);
+  --primary: oklch(0.15 0.01 240);
+  --primary-foreground: oklch(0.97 0.002 90);
+  --secondary: oklch(0.93 0.003 90);
+  --secondary-foreground: oklch(0.15 0.01 240);
+  --muted: oklch(0.93 0.003 90);
+  --muted-foreground: oklch(0.45 0.01 240);
+  --accent: oklch(0.62 0.08 60);
+  --accent-foreground: oklch(0.97 0.002 90);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.9 0.003 90);
-  --input: oklch(0.9 0.003 90);
-  --ring: oklch(0.65 0.08 60);
-  --chart-1: oklch(0.65 0.08 60);
-  --chart-2: oklch(0.2 0.01 240);
-  --chart-3: oklch(0.5 0.01 240);
-  --chart-4: oklch(0.8 0.05 60);
-  --chart-5: oklch(0.3 0.01 240);
-  --sidebar: oklch(0.99 0.002 90);
-  --sidebar-foreground: oklch(0.1 0.005 30);
-  --sidebar-primary: oklch(0.2 0.01 240);
-  --sidebar-primary-foreground: oklch(0.98 0.002 90);
-  --sidebar-accent: oklch(0.96 0.003 90);
-  --sidebar-accent-foreground: oklch(0.2 0.01 240);
-  --sidebar-border: oklch(0.9 0.003 90);
-  --sidebar-ring: oklch(0.65 0.08 60);
+  --border: oklch(0.88 0.003 90);
+  --input: oklch(0.88 0.003 90);
+  --ring: oklch(0.62 0.08 60);
+  --chart-1: oklch(0.62 0.08 60);
+  --chart-2: oklch(0.15 0.01 240);
+  --chart-3: oklch(0.45 0.01 240);
+  --chart-4: oklch(0.78 0.05 60);
+  --chart-5: oklch(0.25 0.01 240);
+  --sidebar: oklch(0.97 0.002 90);
+  --sidebar-foreground: oklch(0.08 0.005 30);
+  --sidebar-primary: oklch(0.15 0.01 240);
+  --sidebar-primary-foreground: oklch(0.97 0.002 90);
+  --sidebar-accent: oklch(0.93 0.003 90);
+  --sidebar-accent-foreground: oklch(0.15 0.01 240);
+  --sidebar-border: oklch(0.88 0.003 90);
+  --sidebar-ring: oklch(0.62 0.08 60);
 }
 
 @layer base {
@@ -144,32 +145,30 @@
   }
 
   /* Brand-specific utilities */
-  .font-display {
-    font-family: 'Cormorant Garamond', serif;
-  }
-
-  .font-mono-brand {
+  .font-brand {
     font-family: 'JetBrains Mono', monospace;
+    font-weight: 500;
+    letter-spacing: -0.02em;
   }
 
-  .gold-rule {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, #B8963E, transparent);
+  .font-body {
+    font-family: 'Outfit', sans-serif;
   }
 
   .section-label {
     font-family: 'JetBrains Mono', monospace;
     font-size: 0.65rem;
-    letter-spacing: 0.2em;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
     color: #B8963E;
+    font-weight: 400;
   }
 
   /* Scroll animation classes */
   .reveal {
     opacity: 0;
-    transform: translateY(32px);
-    transition: opacity 0.7s ease, transform 0.7s ease;
+    transform: translateY(28px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
   }
 
   .reveal.visible {
